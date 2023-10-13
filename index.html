@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="item big">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item big">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item big">8</div>
+        <div class="item">9</div>
+        <div class="item big">10</div>
+        <div class="item big">11</div>
+        <div class="item big">12</div>
+        <div class="item big">13</div>
+      </div>
+      <div class="controls">
+        <input type="radio" name="align-content" id="flex-start" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.webkitAlignContent = 'flex-start';
+                        container.style.alignContent = 'flex-start';
+                        ">
+        <label for="flex-start">align-content: flex-start;</label>
+        <br>
+        <input type="radio" name="align-content" id="flex-end" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.webkitAlignContent = 'flex-end';
+                        container.style.alignContent = 'flex-end' 
+                        ">
+        <label for="flex-end">align-content: flex-end;</label>
+        <br>
+        <input type="radio" name="align-content" id="center" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.webkitAlignContent = 'center';
+                        container.style.alignContent = 'center' 
+                        ">
+        <label for="center">align-content: center;</label>
+        <br>
+        <input type="radio" name="align-content" id="space-between" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.webkitAlignContent = 'space-between';
+                        container.style.alignContent = 'space-between' 
+                        ">
+        <label for="space-between">align-content: space-between;</label>
+        <br>
+        <input type="radio" name="align-content" id="space-around" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.webkitAlignContent = 'space-around';
+                        container.style.alignContent = 'space-around' 
+                        ">
+        <label for="space-around">align-content: space-around;</label>
+        <br>
+        <input type="radio" name="align-content" id="stretch" 
+               onclick="
+                        var container=document.getElementById('container');
+                        container.style.webkitAlignContent = 'stretch'; 
+                        container.style.alignContent = 'stretch' 
+                        " checked>
+        <label for="stretch">align-content: stretch;</label>
+      </div>
+</body>
+</html>
